@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Focus Admin: Creative Admin Dashboard</title>
+        <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+        <!-- Standard iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+        <!-- Standard iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+        <!-- Styles -->
+    <link rel="shortcut icon" href="__PUBLIC__/static/assets/ico/favicon.html">
+    <link href="__PUBLIC__/static/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/theme.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/alertify.css" rel="stylesheet">
+    <link href="http://fonts.useso.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="Favicon Icon" href="__PUBLIC__/static/favicon.ico">
+    <style type="text/css">
+    body,td,th {
+	/* [disabled]font-family: "Open Sans", sans-serif; */
+	font-size: 12px;
+}
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script></script>
+    <![endif]-->
+    <link href="__PUBLIC__/static/assets/css/colorpicker.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/datepicker.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/timepicker.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/select2.css" rel="stylesheet">
+  </head>
+  
+ 
+  <body>
+  <div id="wrap">
+    <div class="navbar navbar-fixed-top">
+      <div  style="background:#000000"class="navbar-inner">
+        <div  style="background:#000000" class="container-fluid">
+          <div class="logo"> 
+            <img src="__PUBLIC__/static/assets/img/logo.png" alt="Realm Admin Template">
+          </div>
+           <a class="btn btn-navbar visible-phone" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+           <a class="btn btn-navbar slide_menu_left visible-tablet">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <div class="top-menu visible-desktop">
+            <ul class="pull-left">
+              <li><a id="messages" data-notification="2" href="#"><i class="icon-envelope"></i> Messages</a></li>
+              <li><a id="notifications" data-notification="3" href="#"><i class="icon-globe"></i> Notifications</a></li>
+            </ul>
+            <ul class="pull-right">  
+              <li><a href="login.html"><i class="icon-off"></i> Logout</a></li>
+            </ul>
+          </div>
+
+          <div class="top-menu visible-phone visible-tablet">
+            <ul class="pull-right">  
+              <li><a title="link to View all Messages page, no popover in phone view or tablet" href="#"><i class="icon-envelope"></i></a></li>
+              <li><a title="link to View all Notifications page, no popover in phone view or tablet" href="#"><i class="icon-globe"></i></a></li>
+              <li><a href="login.html"><i class="icon-off"></i></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+  
+  <!-- Side menu -->
+    <div class="container-fluid">
+     
+  
+      <div class="sidebar-nav nav-collapse collapse">
+        <div class="user_side clearfix">
+          <img src="__PUBLIC__/static/assets/img/odinn.jpg" alt="Odinn god of Thunder">
+          <h5>Odinn</h5>
+          <a href="#"><i class="icon-cog"></i> Settings</a>        
+        </div>
+        <div class="accordion" id="accordion2">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle active b_F79999" href="__PUBLIC__/index.php/index/index/index"><i class="icon-dashboard"></i> <span>主页</span></a>
+            </div>
+          </div>
+          
+          <!--用户信息管理菜单开始-->
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle b_C3F7A7 collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse1"><i class="icon-book"></i> <span>企业信息管理</span></a>
+            </div>
+            <div id="collapse1" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <a class="accordion-toggle" href="__PUBLIC__/index.php/index/yhgl/jcxxcx"><i class="icon-file-alt"></i> 企业信息查询</a>
+                <a class="accordion-toggle" href="__PUBLIC__/index.php/index/yhgl/jcxxlr"><i class="icon-pencil"></i> 企业新增修改</a>
+               <a class="accordion-toggle" href="__PUBLIC__/index.php/index/yhgl/yhsjdc"><i class="icon-download-alt"></i> 企业数据导出</a>
+                <!--<a class="accordion-toggle" href="buttons.html"><i class="icon-circle"></i> Buttons</a>-->
+              </div>
+            </div>
+          </div>
+         <!--用户信息管理菜单结束-->
+         
+         
+         <!--用户评级管理菜单开始-->
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle b_9FDDF6 collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse2"><i class="icon-bar-chart"></i> <span>企业评级管理</span></a>
+            </div>
+            <div id="collapse2" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <a class="accordion-toggle" href="__PUBLIC__/index.php/index/rank/index"><i class="icon-cogs"></i> 企业评级计算</a>
+                <a class="accordion-toggle" href="__PUBLIC__/index.php/index/rank/pjsjcx"><i class="icon-calendar"></i> 评级数据导出</a>
+              </div>
+            </div>
+          </div>
+         <!--用户评级管理菜单结束-->
+         
+        <!--用户评级指标菜单-->
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle b_9FDDF6 collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse3"><i class="icon-reorder"></i> <span>评级指标设置</span></a>
+            </div>
+            <div id="collapse3" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <a class="accordion-toggle" href="#"><i class="icon-wrench"></i> 评级指标1</a>
+                <a class="accordion-toggle" href="#"><i class="icon-wrench"></i> 评级指标2</a>
+                <a class="accordion-toggle" href="#"><i class="icon-wrench"></i> 评级指标3</a>
+                <a class="accordion-toggle" href="#"><i class="icon-wrench"></i> 评级指标4</a>
+              </div>
+            </div>
+          </div>
+         <!--/用户评级指标菜单-->
+         
+        </div>
+      </div>
+
+  <!-- /Side menu -->
+
+      <!-- Main window -->
+      
+        <div class="row-fluid">
+       	 <div class="main_container" id="forms_page">
+          <div class="widget widget-padding span12">
+            <div class="widget-header">
+              <i class="icon-list-alt"></i><h5>企业信息查询</h5>
+              <div class="widget-buttons">
+                  <a href="#" data-title="Collapse" data-collapsed="false" class="tip collapse"><i class="icon-chevron-up"></i></a>
+              </div>
+            </div>
+            <div class="widget-body">
+              <div class="widget-forms clearfix">
+                <form class="form-horizontal" action="__PUBLIC__/index.php/index/rank/rank" method="post">
+                    <div class="control-group">
+                        <label class="control-label">评级年份</label>
+                        <div class="controls">
+                            <select class="span3" name="year">
+                                <!--<option selected="selected" value="2019">2019</option>-->
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2022</option>
+                            </select>
+                        </div>
+                    </div>
+                  <div class="control-group">
+                    <label class="control-label">单位名称</label>
+                    <div class="controls">
+                      <input class="span7" type="text" name="enter_name" placeholder="Type something…">
+                      <!--span class="help-inline">输入或营业执照编号</span-->
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label">营业执照编号</label>
+                    <div class="controls">
+                      <input class="span7"  type="text" name="enter_id" placeholder="You can't type anything…">
+                    </div>
+                  </div>
+                   
+           <!-- <div class="widget-footer">-->
+               <button class="btn btn-primary" type="submit">查询</button>
+               <button class="btn" type="button">取消</button>
+           <!-- </div>-->
+
+        </form>
+        	</div>
+         </div>
+        </div>
+       </div>
+      </div>
+
+
+<th></th>
+
+        
+       <div  class="row-fluid">
+         <div class="main_container" id="forms_page">
+          <div class="widget widget-padding span12">
+            <div class="widget-header">
+              <i class="icon-list-alt"></i><h5>{$year}年度企业等级评定   历史评分:({$old_score})分   本次预估评分:({$rank_sum})分 预评级:{$rank_leven}</h5>
+              <div class="widget-buttons">
+                  <a href="#" data-title="Collapse" data-collapsed="false" class="tip collapse"><i class="icon-chevron-up"></i></a>
+              </div>
+            </div>
+           </div>
+          
+		
+            <div class="widget-body">
+              <div class="widget-forms clearfix">
+               <form class="form-horizontal" action="__PUBLIC__/index.php/index/rank/{$flag}" method="post" >
+                <!--<form class="form-horizontal" method="post" action="__PUBLIC__/index.php/index/index/jcxxlr_update" >
+           <!--enter_oldname隐藏域存放原单位名称-->
+             
+                  <table align="center" class="table table-striped table-bordered table-condensed">
+                <!-----隐藏赋值用------->      
+                      <input type="hidden"  name="year" value="{$year}"/>       <!--计算的年份-->
+                      <input type="hidden"  name="enter_city"  value="{$enter_city}" >      
+                      <input type="hidden"  name="enter_county"  value="{$enter_county}">       
+                      <input type="hidden"  name="enter_id" value="{$enter_id}">       
+                      <input type="hidden"  name="enter_name" value="{$enter_name}">       
+                      <input type="hidden"  name="enter_leixing" value="{$enter_leixing}">       
+                      <input type="hidden"  name="flag" value="{$flag}">
+                <!-----隐藏赋值用------->
+                    <tr >
+                    <td class="span2">所属机构</td>
+                    <td ><input class="span12" type="text"  disabled="value"  value="{$enter_city}" ></td>
+
+                    <td class="span2">所属县域</td>
+                    <td><input class="span12" type="text"  disabled="value" value="{$enter_county}"></td>
+					
+                    <td>组织机构编码</td>
+                    <td colspan="3"><input class="span12" type="text" disabled="value" value="{$enter_id}"></td>
+                    </tr>
+                    
+					<tr>
+                      <td class="span2">单位名称</td>
+                      <td colspan="5"><input class="span12" type="text" disabled="value" value="{$enter_name}"></td>
+                      <td>企业类型</td>
+                    	<td><input class="span12" type="text"  disabled="value" value="{$enter_leixing}"></td>
+                    </tr>
+               
+                   <tr>
+                      <td>原保费规模</td>
+                      <td ><input class="span12"  type="text" disabled="原企业管理人数"  name="res_bfgm_old" value="{$res_bfgm_old}"></td>
+                      <td>原参保人数</td>
+                      <td ><input class="span12"  type="text" disabled="原企业管理人数"  name="res_cbrs_old" value="{$res_cbrs_old}"></td>
+                      <td>原续保时效</td>
+                      <td ><input class="span12"  type="text" disabled="原企业一般员工"  name="res_xbsx_old" value="{$res_xbsx_old}"></td>
+                      <td>原续保人数占比</td>
+                      <td ><input class="span12"  type="text" disabled="原高危岗员工" name="res_xbrs_old" value="{$res_xbrs_old}"></td>
+                    </tr>
+                    <tr>
+                      <td>保费规模(万元)<br>({$rank_res_bfgm}分)</td>
+                      <td ><input class="span12"  type="text" style="color:#F00"  placeholder="填写单位万元" name="res_bfgm"  value="{$res_bfgm}"></td>
+                      <td>参保人数<br>({$rank_res_cbrs}分)</td>
+                      <td ><input class="span12"  type="text" style="color:#F00"   placeholder="填写人数" name="res_cbrs"  value="{$res_cbrs}"></td>
+                      <td>续保时效<br>({$rank_res_xbsx}分)</td>
+                      <td >
+                      
+                        <select class="span12" tabindex="1" style="color:#F00"   name="res_xbsx" data-placeholder="Select here.." >
+                           <option value="{$res_xbsx}">系统结果({$res_xbsx})</option>
+                           <option value="3">3天内续保</option>
+                           <option value="30">30天内续保</option>
+                           <option value="60">60天内续保</option>
+                           <option value="90">90天内续保</option>
+                            <option value="120">90天后续保</option>
+                    
+                        </select>
+                     </td>
+                      <td>续保人数占比<br>({$rank_res_xbrs}分)</td>
+                      <td >
+                      
+                        <select class="span12" tabindex="1" style="color:#F00"   name="res_xbrs" data-placeholder="Select here.." >
+                           <option value="{$res_xbrs}">系统结果({$res_xbrs})</option>
+                           <option value="0.81">企业80%以上人员</option>
+                           <option value="0.61">企业60%以上人员</option>
+                           <option value="0.51">企业50%以上人员</option>
+                           <option value="0.50">企业50%以下人员</option>
+                        </select>
+                     </td>
+                    </tr> 
+                    <tr>
+                      <td>原续保连续性</td>
+                      <td ><input class="span12"  type="text" disabled="原企业在册人数"  value="{$res_lxxb_old}"></td>
+                      <td>原见面频次</td>
+                      <td ><input class="span12"  type="text" disabled="原企业管理人数"  value="{$res_jmpc_old}"></td>
+                      <td>原客户掌握度</td>
+                      <td ><input class="span12"  type="text" disabled="原企业一般员工"  value="{$res_zwcd_old}"></td>
+                      <td>原洞见服务需求</td>
+                      <td ><input class="span12"  type="text" disabled="原高危岗员工"  value="{$res_djxq_old}"></td>
+                    </tr>
+                    <tr>
+                      <td>连续几年续保<br>({$rank_res_lxxb}分)</td>
+                      <td >
+                        <select class="span12" tabindex="1" style="color:#F00" name="res_lxxb" data-placeholder="Select here.." >
+                            <option value="{$res_lxxb}">系统结果({$res_lxxb})</option>
+                           <option value="4">连续三年以上</option>
+                           <option value="3">连续三年</option>
+                           <option value="2">连续二年</option>
+                           <option value="1">连续一年</option>                    
+                        </select>
+                     </td>
+                      <td>一年见面几次<br>({$rank_res_jmpc}分)</td>
+                      <td >
+                        <select class="span12" tabindex="1" style="color:#F00" name="res_jmpc" data-placeholder="Select here.." >
+                            <option value="{$res_jmpc}">系统结果({$res_jmpc})</option>
+                           <option value="1">见面1次</option>
+                           <option value="2">见面2次</option>
+                           <option value="3">见面3次以上</option>
+                           <option value="5">见面5次以上</option>                    
+                        </select>
+                     </td>
+                      <td>客户掌握程度<br>({$rank_res_zwcd}分)</td>
+                     <td >
+                        <select class="span12" tabindex="1" style="color:#F00"   name="res_zwcd" data-placeholder="Select here.." >
+                           <option value="{$res_zwcd}">系统结果({$res_zwcd})</option>
+                           <option value="1">客户基本信息</option>
+                           <option value="2">客户巩固信息</option>
+                           <option value="3">客户深度信息</option>
+                           <option value="4">客户详细信息</option>                    
+                        </select>
+                     </td>
+ 					  <td>洞见服务需求<br>({$rank_res_djxq}分)</td>			
+                      <td >
+                      
+                        <select class="span12" tabindex="1" style="color:#F00"   name="res_djxq" data-placeholder="Select here.." >
+                           <option value="{$res_djxq}">系统结果({$res_djxq})</option>
+                           <option value="1">安保</option>
+                           <option value="2">安保、非安</option>
+                           <option value="3">安保、非安、安全</option>
+                           <option value="4">安保、非安、安全、经营</option>
+                    
+                        </select>
+                     </td>
+                                  
+                   </tr> 
+                    
+                    <tr>
+                      <td>原客户转介绍数</td>
+                      <td ><input class="span12"  type="text" disabled="原企业在册人数"  value="{$res_khzj_old}"></td>
+                      <td>客户转介绍数<br>({$rank_res_khzj}分)</td>			
+                      <td >
+                      
+                        <select class="span12" tabindex="1" style="color:#F00"   name="res_khzj" data-placeholder="Select here.." >
+                           <option value="{$res_khzj}">系统结果({$res_khzj})</option>
+                           <option value="0">年度内0家</option>
+                           <option value="1">年度内1家</option>
+                           <option value="2">年度内2家</option>
+                           <option value="3">年度内3家以上</option>
+                    
+                        </select>
+                     </td>
+                      <td>原安保互动+</td>
+                      <td ><input class="span12"  type="text"  disabled="原企业管理人数"  value="{$res_tbfa_old}"></td>
+                      <td>安保互动+<br>({$rank_res_tbfa}分)</td>		
+                      <td >
+                      
+                        <select class="span12" tabindex="1" style="color:#F00" name="res_tbfa" data-placeholder="Select here.." >
+                           <option value="{$res_tbfa}">系统结果({$res_tbfa})</option>
+                           <option value="1">安保</option>
+                           <option value="2">安保+非安</option>
+                           <option value="3">安保+非安+服务</option>
+                           <option value="4">安保+非安+服务+经营</option>
+                    
+                        </select>
+                     </td>
+                    </tr>
+               
+                    
+                    <tr>
+                      <td>原收集参保资料</td>
+                      <td ><input class="span12"  type="text" disabled="原企业在册人数"  value="{$res_cbsx_old}"></td>
+                      <td>原收集保全资料</td>
+                      <td ><input class="span12"  type="text" disabled="原企业管理人数"  value="{$res_bqsx_old}"></td>
+                      <td>原收集死亡理赔资料</td>
+                      <td ><input class="span12"  type="text" disabled="原企业一般员工"  value="{$res_swlp_old}"></td>
+                      <td>原收集伤残理赔资料</td>
+                      <td ><input class="span12"  type="text" disabled="原高危岗员工"  value="{$res_sclp_old}"></td>
+                    </tr>
+                    <tr>
+                      <td>收集参保资料<br>({$rank_res_cbsx}分)</td>
+                      <td >
+                        <select class="span12" tabindex="1"  style="color:#F00"   name="res_cbsx" data-placeholder="Select here.." >
+                            <option value="{$res_cbsx}">系统结果({$res_cbsx})</option>
+                           <option value="0">9天内递交</option>
+                           <option value="10">10天递交</option>
+                           <option value="11">15天内递交</option>
+                           <option value="16">30天内递交</option> 
+                           <option value="31">30天后内递交</option>                  
+                        </select>
+                     </td>
+                      <td>收集保全资料<br>({$rank_res_bqsx}分)</td>
+                      <td >
+                        <select class="span12" tabindex="1"  style="color:#F00"   name="res_bqsx" data-placeholder="Select here.." >
+                           <option value="{$res_bqsx}">系统结果({$res_bqsx})</option>
+                           <option value="0">2天内递交</option>
+                           <option value="3">3天递交</option>
+                           <option value="4">5天内递交</option>
+                           <option value="6">10天内递交</option> 
+                           <option value="11">10天后内递交</option>                  
+                        </select>
+                     </td>
+                      <td>收集死亡资料<br>({$rank_res_swlp}分)</td>
+                     <td >
+                        <select class="span12" tabindex="1"  style="color:#F00"   name="res_swlp" data-placeholder="Select here.." >
+                           <option value="{$res_swlp}">系统结果({$res_swlp})</option>
+                           <option value="0">出险20天内递交</option>
+                           <option value="21">出险45天内递交</option>
+                           <option value="46">出险55天内递交</option>
+                           <option value="56">出险85天内递交</option> 
+                           <option value="86">出险85天后递交</option>                    
+                        </select>
+                     </td>
+
+           			  <td>收集伤残资料<br>({$rank_res_sclp}分)</td>			
+                      <td >
+                      
+                        <select class="span12" tabindex="1"  style="color:#F00"   name="res_sclp" data-placeholder="Select here.." >
+                           <option value="{$res_sclp}">系统结果({$res_sclp})</option>
+                           <option value="0">出险20天内递交</option>
+                           <option value="21">出险45天内递交</option>
+                           <option value="46">出险55天内递交</option>
+                           <option value="56">出险85天内递交</option> 
+                           <option value="86">出险85天后递交</option>  
+                    
+                        </select>
+                     </td>
+                                  
+                   </tr> 
+                   
+                   
+                   
+                     <tr>
+                      <td>原收集医疗资料</td>
+                      <td ><input class="span12"  type="text" disabled="原企业在册人数"  value="{$res_yllp_old}"></td>
+                      <td>原关爱活动</td>
+                      <td ><input class="span12"  type="text" disabled="原企业管理人数"  value="{$res_gahd_old}"></td>
+                      <td>原重大理赔宣传</td>
+                      <td ><input class="span12"  type="text" disabled="原企业一般员工"  value="{$res_lpxc_old}"></td>
+                      <td>原企业参保相应</td>
+                      <td ><input class="span12"  type="text" disabled="原高危岗员工"  value="{$res_cbxy_old}"></td>
+                    </tr>
+                    <tr>
+                      <td>收集医疗资料<br>({$rank_res_yllp}分)</td>
+                      <td >
+                        <select class="span12" tabindex="1"  style="color:#F00"   name="res_yllp" data-placeholder="Select here.." >
+                            <option value="{$res_yllp}">系统结果({$res_yllp})</option>
+                           <option value="0">治疗结束20天内</option>
+                           <option value="21">治疗结束45天内</option>
+                           <option value="46">治疗结束55天内</option>
+                           <option value="56">治疗结束85天内</option> 
+                           <option value="86">治疗结束85天后内</option>                  
+                        </select>
+                     </td>
+                      <td>关爱活动<br>({$rank_res_gahd}分)</td>
+                      <td >
+                        <select class="span12" tabindex="1"  style="color:#F00"   name="res_gahd" data-placeholder="Select here.." >
+                           <option value="{$res_gahd}">系统结果({$res_gahd})</option>
+                           <option value="0">出险5天内慰问</option>
+                           <option value="6">出险10天内慰问</option>
+                           <option value="11">出险15天内慰问</option>
+                           <option value="16">出险20天内慰问</option> 
+                           <option value="21">出险20天后内慰问</option>                  
+                        </select>
+                     </td>
+                      <td>重大理赔宣传<br>({$rank_res_lpxc}分)</td>
+                     <td >
+                        <select class="span12" tabindex="1"  style="color:#F00"   name="res_lpxc" data-placeholder="Select here.." >
+                           <option value="{$res_lpxc}">系统结果({$res_lpxc})</option>
+                           <option value="0">赔付后5天内宣传</option>
+                           <option value="6">赔付后10天内宣传</option>
+                           <option value="11">赔付后15天内宣传</option>
+                           <option value="16">赔付后20天内宣传</option> 
+                           <option value="21">赔付后20天后内宣传</option>                    
+                        </select>
+                     </td>
+ 					  <td>企业参保响应<br>({$rank_res_cbxy}分)</td>			
+                      <td >
+                      
+                        <select class="span12" tabindex="1"  style="color:#F00"   name="res_cbxy" data-placeholder="Select here.." >
+                           <option value="{$res_cbxy}">系统结果({$res_cbxy})</option>
+                           <option value="1">主动参保</option>
+                           <option value="2">提醒后参保</option>
+                           <option value="3">监管引导后参保</option>
+                           <option value="4">提醒引导后无参保</option>  
+                    	</select>
+                     </td>
+                                  
+                   </tr>
+                  </table>
+                   
+                
+            <div class="widget-footer">
+               <button class="btn btn-primary" type="submit">提交</button>
+               <button class="btn" type="button">取消</button>
+            </div>
+ 
+
+      <!-- /Main window -->
+      
+    <!--/.fluid-container-->
+    <!-- wrap ends-->
+    <!--联动菜单脚本开始-->
+    </form> 
+        </div>
+       </div>
+      </div>
+     </div>  
+    </div>
+   </div>
+  </div>
+     </div><!--/.fluid-container-->
+    </div><!-- wrap ends-->
+	<script>
+	function move()
+	{
+	var s1=document.getElementById("s1"); var s2=document.getElementById("s2"); <!-- 获取一级和二级的属性-->
+	var add;
+	if(s1.value=="昆明")
+	{
+	add=new Array("五华","盘龙","官渡","西山","东川","呈贡","晋宁","富民","宜良","石林","嵩明","禄劝","寻甸","安宁"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="曲靖")
+	{
+	add=new Array("麒麟","沾益","马龙","陆良","师宗","罗平","富源","会泽","宣威");<!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="玉溪")
+	{
+	add=new Array("红塔","江川","澄江","通海","华宁","易门","峨山","新平","元江"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="保山")
+	{
+	add=new Array("隆阳","施甸","龙陵","昌宁","腾冲");
+	}else if(s1.value=="昭通")
+	{
+	add=new Array("昭阳","鲁甸","巧家","盐津","大关","永善","绥江","镇雄","彝良","威信","水富"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="丽江")
+	{
+	add=new Array("古城","玉龙","永胜","华坪","宁蒗"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="普洱")
+	{
+	add=new Array("思茅","宁洱","墨江","景东","景谷","镇沅","江城","孟连","澜沧","西盟"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="临沧")
+	{
+	add=new Array("临翔","凤庆","云","永德","镇康","双江","耿马","沧源"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="楚雄")
+	{
+	add=new Array("楚雄","双柏","牟定","南华","姚安","大姚","永仁","元谋","武定","禄丰"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="红河")
+	{
+	add=new Array("个旧","开远","蒙自","弥勒","屏边","建水","石屏","泸西","元阳","红河","金平","绿春","河口"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="文山")
+	{
+	add=new Array("文山","砚山","西畴","麻栗坡","马关","丘北","广南","富宁"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="版纳")
+	{
+	add=new Array("景洪","勐海","勐腊"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="大理")
+	{
+	add=new Array("大理","漾濞","祥云","宾川","弥渡","南涧","巍山","永平","云龙","洱源","剑川","鹤庆"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="德宏")
+	{
+	add=new Array("瑞丽","芒","梁河","盈江","陇川"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="怒江")
+	{
+	add=new Array("泸水","福贡","贡山","兰坪"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="迪庆")
+	{
+	add=new Array("香格里拉","德钦","维西"); <!--比对value值，实现对应二级text值的动态生成-->
+	}
+	else
+	{
+	add=null; <!--若没有就为空，当然不可能出现的-->
+	}
+	s2.length=0;
+	for(var i=0;i<add.length;i++) { var ss=new Option(); ss.text=add[i].split()[0];
+	s2.add(ss);
+	<!--把text值添加到二级select中，显示出来-->
+	}
+	}
+</script>
+	<!--联动菜单结束-->
+
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/raphael-min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/sparkline.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/morris.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.dataTables.min.js"></script>   
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.masonry.min.js"></script>   
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.imagesloaded.min.js"></script>   
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.facybox.js"></script>   
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.alertify.min.js"></script> 
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.knob.js"></script>
+    <script type='text/javascript' src="__PUBLIC__/static/assets/js/fullcalendar.min.js"></script>
+    <script type='text/javascript' src="__PUBLIC__/static/assets/js/jquery.gritter.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/realm.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/realm.js"></script>
+    <!--<script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.slimscroll.min.js"></script>-->
+  </body>
+</html>

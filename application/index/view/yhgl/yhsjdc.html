@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Focus Admin: Creative Admin Dashboard</title>
+        <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+        <!-- Standard iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+        <!-- Standard iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+        <!-- Styles -->
+    <link rel="shortcut icon" href="__PUBLIC__/static/assets/ico/favicon.html">
+    <link href="__PUBLIC__/static/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/theme.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/alertify.css" rel="stylesheet">
+    <link href="http://fonts.useso.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="Favicon Icon" href="__PUBLIC__/static/favicon.ico">
+    <style type="text/css">
+    body,td,th {
+	/* [disabled]font-family: "Open Sans", sans-serif; */
+	font-size: 12px;
+}
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script></script>
+    <![endif]-->
+    <link href="__PUBLIC__/static/assets/css/colorpicker.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/datepicker.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/timepicker.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/select2.css" rel="stylesheet">
+  </head>
+  
+ 
+  <body>
+  <div id="wrap">
+    <div class="navbar navbar-fixed-top">
+      <div  style="background:#000000"class="navbar-inner">
+        <div  style="background:#000000" class="container-fluid">
+          <div class="logo"> 
+            <img src="__PUBLIC__/static/assets/img/logo.png" alt="Realm Admin Template">
+          </div>
+           <a class="btn btn-navbar visible-phone" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+           <a class="btn btn-navbar slide_menu_left visible-tablet">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <div class="top-menu visible-desktop">
+            <ul class="pull-left">
+              <li><a id="messages" data-notification="2" href="#"><i class="icon-envelope"></i> Messages</a></li>
+              <li><a id="notifications" data-notification="3" href="#"><i class="icon-globe"></i> Notifications</a></li>
+            </ul>
+            <ul class="pull-right">  
+              <li><a href="login.html"><i class="icon-off"></i> Logout</a></li>
+            </ul>
+          </div>
+
+          <div class="top-menu visible-phone visible-tablet">
+            <ul class="pull-right">  
+              <li><a title="link to View all Messages page, no popover in phone view or tablet" href="#"><i class="icon-envelope"></i></a></li>
+              <li><a title="link to View all Notifications page, no popover in phone view or tablet" href="#"><i class="icon-globe"></i></a></li>
+              <li><a href="login.html"><i class="icon-off"></i></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+
+  <!-- Side menu -->
+    <div class="container-fluid">
+      <div class="sidebar-nav nav-collapse collapse">
+        <div class="user_side clearfix">
+          <img src="__PUBLIC__/static/assets/img/odinn.jpg" alt="Odinn god of Thunder">
+          <h5>Odinn</h5>
+          <a href="#"><i class="icon-cog"></i> Settings</a>        
+        </div>
+        <div class="accordion" id="accordion2">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle active b_F79999" href="__PUBLIC__/index.php/index/index/index"><i class="icon-dashboard"></i> <span>主页</span></a>
+            </div>
+          </div>
+          
+          <!--用户信息管理菜单开始-->
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle b_C3F7A7 collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse1"><i class="icon-book"></i> <span>企业信息管理</span></a>
+            </div>
+            <div id="collapse1" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <a class="accordion-toggle" href="__PUBLIC__/index.php/index/yhgl/jcxxcx"><i class="icon-file-alt"></i> 企业信息查询</a>
+                <a class="accordion-toggle" href="__PUBLIC__/index.php/index/yhgl/jcxxlr"><i class="icon-pencil"></i> 企业新增修改</a>
+               <a class="accordion-toggle" href="__PUBLIC__/index.php/index/yhgl/yhsjdc"><i class="icon-download-alt"></i> 企业数据导出</a>
+                <!--<a class="accordion-toggle" href="buttons.html"><i class="icon-circle"></i> Buttons</a>-->
+              </div>
+            </div>
+          </div>
+         <!--用户信息管理菜单结束-->
+         
+         
+         <!--用户评级管理菜单开始-->
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle b_9FDDF6 collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse2"><i class="icon-bar-chart"></i> <span>企业评级管理</span></a>
+            </div>
+            <div id="collapse2" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <a class="accordion-toggle" href="__PUBLIC__/index.php/index/rank/index"><i class="icon-cogs"></i> 企业评级计算</a>
+                <a class="accordion-toggle" href="__PUBLIC__/index.php/index/rank/pjsjcx"><i class="icon-calendar"></i> 评级数据导出</a>
+              </div>
+            </div>
+          </div>
+         <!--用户评级管理菜单结束-->
+         
+        <!--用户评级指标菜单-->
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle b_9FDDF6 collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse3"><i class="icon-reorder"></i> <span>评级指标设置</span></a>
+            </div>
+            <div id="collapse3" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <a class="accordion-toggle" href="#"><i class="icon-wrench"></i> 评级指标1</a>
+                <a class="accordion-toggle" href="#"><i class="icon-wrench"></i> 评级指标2</a>
+                <a class="accordion-toggle" href="#"><i class="icon-wrench"></i> 评级指标3</a>
+                <a class="accordion-toggle" href="#"><i class="icon-wrench"></i> 评级指标4</a>
+              </div>
+            </div>
+          </div>
+         <!--/用户评级指标菜单-->
+         
+        </div>
+      </div>
+
+  <!-- /Side menu -->
+           
+		<!-- Main window -->
+
+
+        
+       <div  class="row-fluid">
+         <div class="main_container" >
+          <div class="widget widget-padding span12">
+            <div class="widget-header">
+              <i class="icon-list-alt"></i><h5>企业基础信息查询</h5>
+              <div class="widget-buttons">
+                  <a href="#" data-title="Collapse" data-collapsed="false" class="tip collapse"><i class="icon-chevron-up"></i></a>
+              </div>
+            </div>
+           </div>
+           <script>
+    function is_submit(value) {
+        var form1 = $("#form1");
+        if (value == 1) {          
+            //var id = $("#id").val();
+            form1.action = "__PUBLIC__/index.php/index/yhgl/yhsjdc";
+            $("#form1").attr("action",form1.action);
+            form1.submit();
+        }
+        if (value == 2) {
+            //var title = $("#title").val();
+            form1.action = "__PUBLIC__/index.php/index/yhgl/jcsjdc";
+            $("#form1").attr("action", form1.action);
+            form1.submit();
+
+        }
+
+
+    }
+
+
+</script>
+
+		
+            <div class="widget-body">
+              <div class="widget-forms clearfix">
+               <!-- <form class="form-horizontal" action="__PUBLIC__/index.php/index/index/jcxxlr_update" >-->
+               
+                <!--<form action="" class="form-horizontal" id="jcxx" name="jcxx" method="post" enctype="multipart/form-data" >-->
+                <form class="form-signin" role="form"  name="form1" method="post" action="" id="form1">
+        
+           <!--enter_oldname隐藏域存放原单位名称-->
+                  <table align="center" class="table table-striped table-bordered table-condensed">
+                 	<tr >
+                    <td class="span2">所属机构</td>
+                 	<td class="span2">
+                    <!--州市联动菜单开始-->
+                    <select  name="enter_city" class="span12"  id="s1" onChange="move()" ><!-- 根据id获取value，onchange（）触发函数move（）修改二级select的text值实现联动 -->
+					<option selected value="{$enter_city}">{$enter_city}</option>
+<!--默认选中-->
+					<option value="昆明">昆明</option>
+					<option value="曲靖">曲靖</option>
+                    <option value="玉溪">玉溪</option>
+                    <option value="保山">保山</option>
+                    <option value="昭通">昭通</option>
+                    <option value="丽江">丽江</option>
+                    <option value="普洱">普洱</option>
+                    <option value="临沧">临沧</option>
+                    <option value="楚雄">楚雄</option>
+                    <option value="红河">红河</option>
+                    <option value="文山">文山</option>
+                    <option value="版纳">版纳</option>
+                    <option value="大理">大理</option>
+                    <option value="德宏">德宏</option>
+                    <option value="怒江">怒江</option>
+                    <option value="迪庆">迪庆</option>
+					</select></td>
+
+                    
+                    <td class="span2">所属县域</td>
+					<td class="span2"><select name="enter_county" class="span12" id="s2">
+					<option selected value="{$enter_county}">{$enter_county}</option>
+<!--默认选中，动态生成option --></select></td>
+                    <td class="span2">企业类型</td>
+                     <td >
+                      
+                        <select class="span12" tabindex="1"  name="enter_leixing" data-placeholder="Select here.." >
+                           <option value="{$enter_leixing}">{$enter_leixing}</option>
+                           <option value="非煤矿">非煤矿</option>
+                           <option value="烟花爆竹经营">烟花爆竹经营</option>
+                           <option value="烟花爆竹生产">烟花爆竹生产</option>
+                           <option value="危险化学生产">危险化学生产</option>
+                           <option value="危险化学经营">危险化学经营</option>
+                           <option value="其它高危">其它高危</option>
+                        </select>
+                     </td>
+                     <td class="span2">组织机构编码</td>
+                      	<td><input class="span12" type="text" name="enter_id" value="{$enter_id}"></td>         
+                    </tr>
+                    <tr>
+                    	<td colspan="2">单位名称</td>
+                    	<td colspan="6"><input class="span12" type="text" name="enter_name" value="{$enter_name}"></td>                                              
+					</tr>
+                  </table>  
+                                                    
+            <div class="widget-footer">
+          
+				
+                 <input  class="btn btn-primary" type="button" id="cx" value="查询" onclick="is_submit(1)"/>
+                 
+                 
+				<input  class="btn btn-primary" type="button" id="dc" value="导出" onclick="is_submit(2)" />
+   
+                
+
+           </div>
+
+
+				
+
+
+ 		</form>
+
+      <!-- /Main window -->
+      
+    <!--/.fluid-container-->
+    <!-- wrap ends-->
+    <!--联动菜单脚本开始-->
+    
+        </div>
+       </div>
+      </div>
+     </div>  
+    </div>
+    
+      
+      
+     <div class="main_container" id="users_page"> 
+	   <div class="row-fluid">
+		 <div class="widget widget-padding span12">
+            <div class="widget-header">
+             <i class="icon-table"></i><h5>企业列表信息</h5>
+             <div class="btn-group pull-right">
+              <!--   <a href="__PUBLIC__/index.php/index/yhgl/jcsjdc" target="_blank" class="btn"><i class="icon-download-alt"></i> 数据导出</a>
+                <a href="__PUBLIC__/index.php/index/yhgl/jcsjdc" target="_blank" class="btn"><i class="icon-download-alt"></i> 数据导出</a>
+               <button class="btn"><i class="icon-envelope"></i> Email</button>
+                <button class="btn"><i class="icon-cog"></i> Settings</button>  -->
+              </div>       
+            </div>  
+            <div class="widget-body">
+            <form class="form-horizontal">
+              <table id="users" class="table table-striped table-bordered dataTable">
+                <thead>
+                  <tr>
+                    <th>地区</th>
+                    <th>县区</th>
+                    <th>单位名称</th>
+                    <th>单位性质</th>
+                    <th>单位类型</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                 {volist name="list" id="vo" empty="数据为空"}
+        		<tr>
+                <!-- 循环数据  -->
+      			
+          			<td>{$vo.ENTER_CITY}</td>
+          			<td>{$vo.ENTER_COUNTY}</td>
+          			<td>{$vo.ENTER_NAME}</td>
+                    <td>{$vo.ENTER_XINGZHI}</td>
+                    <td>{$vo.ENTER_LEIXING}</td>
+                    <td>
+                      <div class="btn-group">
+                        <a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#">
+                        操作功能	
+                          <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="__PUBLIC__/index.php/index/yhgl/jcxxcx_info?enter_name={$vo.ENTER_NAME}" name="enter_name"  method="post"><i class="icon-envelope"></i> 企业基本信息</a></li>
+                            <li><a href="__PUBLIC__/index.php/index/yhgl/jcxxlr_xg?enter_name={$vo.ENTER_NAME}" name="enter_name"  method="post"><i class="icon-edit"></i> 基础信息修改</a></li>
+                            <li><a href="" name="enter_name"  method="post"><i class="icon-signal"></i> 企业评级记录</a></li>
+                         
+                            <!-- <li><a href="#"><i class="icon-trash"></i> Delete</a></li>  -->
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  {/volist}
+                 </tbody>
+              </table>
+             
+             </form> 
+            </div> <!-- /widget-body -->
+          </div> <!-- /widget -->
+        </div> <!-- /row-fluid -->
+
+      </div>
+      <!-- /Main window -->
+
+    </div><!--/.fluid-container-->
+    <!-- wrap ends-->
+    
+
+	<!-- Example Modal -->
+    <div id="example_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Add user/employee</h3>
+      </div>
+      <div class="modal-body">
+        <p>Here you can insert the user creation form</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        <button class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+
+  <!--联动菜单脚本开始-->
+  <script>
+      function move()
+      {
+          var s1=document.getElementById("s1"); var s2=document.getElementById("s2"); <!-- 获取一级和二级的属性-->
+          var add;
+          if(s1.value=="昆明")
+          {
+              add=new Array("","，""五华区","盘龙区","官渡区","西山区","东川区","呈贡区","晋宁区","富民县","宜良县","嵩明县","石林彝族自治县","禄劝彝族苗族自治县","寻甸回族彝族自治县","安宁市"); <!--比对value值，实现对应二级text值的动态生成-->
+          }else if(s1.value=="曲靖")
+          {
+              add=new Array("","麒麟区","沾益区","马龙区","陆良县","师宗县","罗平县","富源县","会泽县","宣威市");<!--比对value值，实现对应二级text值的动态生成-->
+          }else if(s1.value=="玉溪")
+          {
+              add=new Array("","红塔区","江川区","澄江市","通海县","华宁县","易门县","峨山彝族自治县","新平彝族傣族自治县","元江哈尼族彝族傣族自治县"); <!--比对value值，实现对应二级text值的动态生成-->
+          }else if(s1.value=="保山")
+          {
+              add=new Array("","隆阳区","施甸县","龙陵县","昌宁县","腾冲市");
+          }else if(s1.value=="昭通")
+          {
+              add=new Array("","昭阳区","鲁甸县","巧家县","盐津县","大关县","永善县","绥江县","镇雄县","彝良县","威信县","水富市"); <!--比对value值，实现对应二级text值的动态生成-->
+          }else if(s1.value=="丽江")
+          {
+              add=new Array("","古城区","永胜县","华坪县","宁蒗彝族自治县","玉龙纳西族自治县"); <!--比对value值，实现对应二级text值的动态生成-->
+          }else if(s1.value=="普洱")
+          {
+              add=new Array("","思茅区","景东彝族自治县","西盟佤族自治县","墨江哈尼族自治县","澜沧拉祜族自治县","景谷傣族彝族自治县","宁洱哈尼族彝族自治县","江城哈尼族彝族自治县","孟连傣族拉祜族佤族自治县","镇沅彝族哈尼族拉祜族自治县"); <!--比对value值，实现对应二级text值的动态生成-->
+          }else if(s1.value=="临沧")
+          {
+              add=new Array("","临翔区","云县","凤庆县","永德县","镇康县","沧源佤族自治县","耿马傣族佤族自治县","双江拉祜族佤族布朗族傣族自治县"); <!--比对value值，实现对应二级text值的动态生成-->
+          }else if(s1.value=="楚雄")
+          {
+              add=new Array("","楚雄市","双柏县","牟定县","南华县","姚安县","大姚县","永仁县","元谋县","武定县","禄丰县"); <!--比对value值，实现对应二级text值的动态生成-->
+          }else if(s1.value=="红河")
+          {
+              add=new Array("","个旧市","开远市","蒙自市","弥勒市","建水县","石屏县","泸西县","元阳县","红河县","绿春县","河口瑶族自治县","屏边苗族自治县","金平苗族瑶族傣族自治县"); <!--比对value值，实现对应二级text值的动态生成-->
+          }else if(s1.value=="文山")
+          {
+              add=new Array("","文山市","砚山县","西畴县","马关县","丘北县","广南县","富宁县","麻栗坡县"); <!--比对value值，实现对应二级text值的动态生成-->
+          }else if(s1.value=="版纳")
+          {
+              add=new Array("","景洪市","勐海县","勐腊县"); <!--比对value值，实现对应二级text值的动态生成-->
+          }else if(s1.value=="大理")
+          {
+              add=new Array("","大理市","祥云县","宾川县","弥渡县","永平县","云龙县","洱源县","剑川县","鹤庆县","漾濞彝族自治县","南涧彝族自治县","巍巍山彝族回族自治县山"); <!--比对value值，实现对应二级text值的动态生成-->
+          }else if(s1.value=="德宏")
+          {
+              add=new Array("瑞丽市","芒市","梁河县","盈江县","陇川县"); <!--比对value值，实现对应二级text值的动态生成-->
+          }else if(s1.value=="怒江")
+          {
+              add=new Array("泸水市","福贡县","贡山独龙族怒族自治县","兰坪白族普米族自治县"); <!--比对value值，实现对应二级text值的动态生成-->
+          }else if(s1.value=="迪庆")
+          {
+              add=new Array("香格里拉市","德钦县","维西傈僳族自治县"); <!--比对value值，实现对应二级text值的动态生成-->
+          }
+          else
+          {
+              add=null; <!--若没有就为空，当然不可能出现的-->
+          }
+          s2.length=0;
+          for(var i=0;i<add.length;i++) { var ss=new Option(); ss.text=add[i].split()[0];
+              s2.add(ss);
+              <!--把text值添加到二级select中，显示出来-->
+          }
+      }
+  </script>
+  <!--联动菜单结束-->
+    
+  
+	<script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/raphael-min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src='__PUBLIC__/static/assets/js/sparkline.js'></script>
+    <script type="text/javascript" src='__PUBLIC__/static/assets/js/morris.min.js'></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.dataTables.min.js"></script>   
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.masonry.min.js"></script>   
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.imagesloaded.min.js"></script>   
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.facybox.js"></script>   
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.alertify.min.js"></script> 
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.knob.js"></script>
+    <script type='text/javascript' src='__PUBLIC__/static/assets/js/fullcalendar.min.js'></script>
+    <script type='text/javascript' src='__PUBLIC__/static/assets/js/jquery.gritter.min.js'></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/realm.js"></script>
+  </body>
+</html>

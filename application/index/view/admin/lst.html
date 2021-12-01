@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>后台</title>
+    <style type="text/css">
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      table{
+        width: 500px;
+        margin: auto;
+      }
+      .pagination li{
+        margin: 10px;
+        float: left;
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p>我是lst</p>
+    <a href="{:url('admin/add')}" rel="external nofollow" >跳转add</a>
+    <table border="1" cellspacing="" cellpadding="">
+      <tr>
+        <th>ID</th>
+        <th>用户名</th>
+        <th>操作</th>
+      </tr>
+      <!-- 循环数据  -->
+      {volist name="list" id="vo"}
+        <tr>
+          <td>{$vo.ENTER_CITY}</td>
+          <td>{$vo.ENTER_NAME}</td>
+          <td>{$vo.POLICY_DATE}</td>
+        </tr>
+      {/volist}
+    </table>
+    <!-- 分页器 -->
+    {$list ->render()}
+  </body>
+</html>

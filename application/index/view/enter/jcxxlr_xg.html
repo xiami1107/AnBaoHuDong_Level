@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Focus Admin: Creative Admin Dashboard</title>
+        <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+        <!-- Standard iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+        <!-- Standard iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+        <!-- Styles -->
+    <link rel="shortcut icon" href="__PUBLIC__/static/assets/ico/favicon.html">
+    <link href="__PUBLIC__/static/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/theme.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/alertify.css" rel="stylesheet">
+    <link href="http://fonts.useso.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="Favicon Icon" href="__PUBLIC__/static/favicon.ico">
+    <style type="text/css">
+    body,td,th {
+	/* [disabled]font-family: "Open Sans", sans-serif; */
+	font-size: 12px;
+}
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script></script>
+    <![endif]-->
+    <link href="__PUBLIC__/static/assets/css/colorpicker.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/datepicker.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/timepicker.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/select2.css" rel="stylesheet">
+  </head>
+  
+ 
+  <body>
+  <div id="wrap">
+    <div class="navbar navbar-fixed-top">
+      <div  style="background:#000000"class="navbar-inner">
+        <div  style="background:#000000" class="container-fluid">
+          <div class="logo"> 
+            <img src="assets/img/logo.png" alt="Realm Admin Template">
+          </div>
+           <a class="btn btn-navbar visible-phone" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+           <a class="btn btn-navbar slide_menu_left visible-tablet">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <div class="top-menu visible-desktop">
+            <ul class="pull-left">
+              <li><a id="messages" data-notification="2" href="#"><i class="icon-envelope"></i> Messages</a></li>
+              <li><a id="notifications" data-notification="3" href="#"><i class="icon-globe"></i> Notifications</a></li>
+            </ul>
+            <ul class="pull-right">  
+              <li><a href="login.html"><i class="icon-off"></i> Logout</a></li>
+            </ul>
+          </div>
+
+          <div class="top-menu visible-phone visible-tablet">
+            <ul class="pull-right">  
+              <li><a title="link to View all Messages page, no popover in phone view or tablet" href="#"><i class="icon-envelope"></i></a></li>
+              <li><a title="link to View all Notifications page, no popover in phone view or tablet" href="#"><i class="icon-globe"></i></a></li>
+              <li><a href="login.html"><i class="icon-off"></i></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+     
+  <!-- Side menu -->
+    <div class="container-fluid">
+     
+  
+      <div class="sidebar-nav nav-collapse collapse">
+        <div class="user_side clearfix">
+          <img src="__PUBLIC__/static/assets/img/odinn.jpg" alt="Odinn god of Thunder">
+          <h5>Odinn</h5>
+          <a href="#"><i class="icon-cog"></i> Settings</a>        
+        </div>
+        <div class="accordion" id="accordion2">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle active b_F79999" href="__PUBLIC__/index.php/index/index/index"><i class="icon-dashboard"></i> <span>主页</span></a>
+            </div>
+          </div>
+          
+          <!--用户信息管理菜单开始-->
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle b_C3F7A7 collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse1"><i class="icon-book"></i> <span>企业信息管理</span></a>
+            </div>
+            <div id="collapse1" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <a class="accordion-toggle" href="__PUBLIC__/index.php/index/yhgl/jcxxcx"><i class="icon-file-alt"></i> 企业信息查询</a>
+                <a class="accordion-toggle" href="__PUBLIC__/index.php/index/yhgl/jcxxlr"><i class="icon-pencil"></i> 企业新增修改</a>
+               <a class="accordion-toggle" href="__PUBLIC__/index.php/index/yhgl/yhsjdc"><i class="icon-download-alt"></i> 企业数据导出</a>
+                <!--<a class="accordion-toggle" href="buttons.html"><i class="icon-circle"></i> Buttons</a>-->
+              </div>
+            </div>
+          </div>
+         <!--用户信息管理菜单结束-->
+         
+         
+         <!--用户评级管理菜单开始-->
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle b_9FDDF6 collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse2"><i class="icon-bar-chart"></i> <span>企业评级管理</span></a>
+            </div>
+            <div id="collapse2" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <a class="accordion-toggle" href="__PUBLIC__/index.php/index/rank/index"><i class="icon-cogs"></i> 企业评级计算</a>
+                <a class="accordion-toggle" href="__PUBLIC__/index.php/index/rank/pjsjcx"><i class="icon-calendar"></i> 评级数据导出</a>
+              </div>
+            </div>
+          </div>
+         <!--用户评级管理菜单结束-->
+         
+        <!--用户评级指标菜单-->
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle b_9FDDF6 collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse3"><i class="icon-reorder"></i> <span>评级指标设置</span></a>
+            </div>
+            <div id="collapse3" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <a class="accordion-toggle" href="#"><i class="icon-wrench"></i> 评级指标1</a>
+                <a class="accordion-toggle" href="#"><i class="icon-wrench"></i> 评级指标2</a>
+                <a class="accordion-toggle" href="#"><i class="icon-wrench"></i> 评级指标3</a>
+                <a class="accordion-toggle" href="#"><i class="icon-wrench"></i> 评级指标4</a>
+              </div>
+            </div>
+          </div>
+         <!--/用户评级指标菜单-->
+         
+        </div>
+      </div>
+
+  <!-- /Side menu -->
+
+      <!-- Main window -->
+      
+        <div class="row-fluid">
+       	 <div class="main_container" id="forms_page">
+          <div class="widget widget-padding span12">
+            <div class="widget-header">
+              <i class="icon-list-alt"></i><h5>企业信息查询</h5>
+              <div class="widget-buttons">
+                  <a href="#" data-title="Collapse" data-collapsed="false" class="tip collapse"><i class="icon-chevron-up"></i></a>
+              </div>
+            </div>
+            <div class="widget-body">
+              <div class="widget-forms clearfix">
+                <form class="form-horizontal" action="__PUBLIC__/index.php/index/index/jcxxlr" method="post">
+                  <div class="control-group">
+                    <label class="control-label">单位名称</label>
+                    <div class="controls">
+                      <input class="span7" type="text" name="enter_name" placeholder="Type something…">
+                      <span class="help-inline">输入或营业执照编号</span>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label">营业执照编号</label>
+                    <div class="controls">
+                      <input class="span7"  type="text" name="enter_id" placeholder="You can't type anything…">
+                    </div>
+                  </div>
+                   
+           <!-- <div class="widget-footer">-->
+               <button class="btn btn-primary" type="submit">查询</button>
+               <button class="btn" type="button">取消</button>
+           <!-- </div>-->
+
+        </form>
+        	</div>
+         </div>
+        </div>
+       </div>
+      </div>
+
+
+<th></th>
+
+        
+       <div  class="row-fluid">
+         <div class="main_container" id="forms_page">
+          <div class="widget widget-padding span12">
+            <div class="widget-header">
+              <i class="icon-list-alt"></i><h5>企业基础信息修改{$id}</h5>
+              <div class="widget-buttons">
+                  <a href="#" data-title="Collapse" data-collapsed="false" class="tip collapse"><i class="icon-chevron-up"></i></a>
+              </div>
+            </div>
+           </div>
+          
+		
+            <div class="widget-body">
+              <div class="widget-forms clearfix">
+               <!-- <form class="form-horizontal" action="__PUBLIC__/index.php/index/index/jcxxlr_update" >-->
+                <form class="form-horizontal" method="post" action="__PUBLIC__/index.php/index/index/jcxxlr_update" >
+           <!--enter_oldname隐藏域存放原单位名称-->
+               <input name="id" type="hidden" value="{$id}"> 
+                  <table align="center" class="table table-striped table-bordered table-condensed">
+                 	<tr >
+                    <td class="span2">原所属机构</td>
+                    <td><input class="span12 error"  type="text" disabled="原所属机构"   value="{$enter_city}"></td>
+
+                    <td class="span2">所属机构</td>
+                 	<td>
+                    <!--州市联动菜单开始-->
+                    <select  name="enter_city" class="span12"  id="s1" onChange="move()"><!-- 根据id获取value，onchange（）触发函数move（）修改二级select的text值实现联动 -->
+					<option selected value="{$enter_city}">{$enter_city}</option>
+<!--默认选中-->
+					<option value="昆明">昆明</option>
+					<option value="曲靖">曲靖</option>
+                    <option value="玉溪">玉溪</option>
+                    <option value="保山">保山</option>
+                    <option value="昭通">昭通</option>
+                    <option value="丽江">丽江</option>
+                    <option value="普洱">普洱</option>
+                    <option value="临沧">临沧</option>
+                    <option value="楚雄">楚雄</option>
+                    <option value="红河">红河</option>
+                    <option value="文山">文山</option>
+                    <option value="版纳">版纳</option>
+                    <option value="大理">大理</option>
+                    <option value="德宏">德宏</option>
+                    <option value="怒江">怒江</option>
+                    <option value="迪庆">迪庆</option>
+					</select></td>
+                    <td class="span2">原所属县域</td>
+                    <td><input class="span12 error" type="text" disabled="原所属县域"  value="{$enter_county}"></td>
+
+                    <td class="span2">所属县域</td>
+					<td ><select name="enter_county" class="span12" id="s2">
+					<option selected>{$enter_county}</option>
+<!--默认选中，动态生成option --></select></td>
+                    </tr>
+                    
+					<tr>
+                      <td class="span2">原单位名称</td>
+                      <td colspan="5"> <input class="span12 error" disabled="原单位名称" type="text" value="{$enter_name}"></td>
+                      <td>原经营状况</td>
+                    	<td><input class="span12 error" type="text" disabled="原经营状况" value="{$enter_zhuangtai}"></td>
+                    </tr>
+
+                    <tr>
+                    	<td>单位名称</td>
+                    	<td colspan="5"><input class="span12" type="text" name="enter_name" value="{$enter_name}"></td>
+                        	<td>经营状况</td>
+                    	<td><select class="span12"  tabindex="1"  name="enter_zhuangtai" data-placeholder="Select here.." >
+                           <option value="{$enter_zhuangtai}">{$enter_zhuangtai}</option>
+                           <option value="生产">生产</option>
+                           <option value="整顿">整顿</option>
+                           <option value="倒闭">倒闭</option>
+                        </select></td>
+					</tr>
+                    <tr>
+                      <td class="span2">原单位地址</td>
+                      <td colspan="7"> <input class="span12 error" disabled="原单位名称" type="text" value="{$enter_add}"></td>
+
+                    </tr>
+
+                    <tr>
+                    	<td>单位地址</td>
+                    	<td colspan="7"><input class="span12" type="text" name="enter_add" value="{$enter_add}"></td>
+
+
+					</tr>                  
+                    <tr>
+                      <td>原组织机构编码</td>
+                      <td colspan="3"><input class="span8 error" disabled="" type="text" value="{$enter_id}"></td>
+                      <td>组织机构编码</td>
+                      <td colspan="3"><input class="span8" type="text" name="enter_id" value="{$enter_id}"></td>
+
+                   <tr>
+                    
+                     <td class="span2"  >原单位性质</td>
+                     <td ><input class="span12 error"  type="text" disabled="原单位性质"  value="{$enter_xingzhi}"></td>
+                     <td>单位性质</td>
+                     <td>
+                      
+                        <select class="span12"  tabindex="1"  name="enter_xingzhi" data-placeholder="Select here.." >
+                           <option value="{$enter_xingzhi}">{$enter_xingzhi}</option>
+                           <option value="国有">国有</option>
+                           <option value="集体">集体</option>
+                           <option value="民营">民营</option>
+                           <option value="三资">三资</option>
+                            <option value="其他">其他</option>
+                        </select>
+                     </td>
+
+
+                     <td>原企业类型</td>
+                     <td ><input class="span12 error"  type="text" disabled="原企业类型"  value="{$enter_leixing}"></td>
+                     <td>企业类型</td>
+                     <td >
+                      
+                        <select class="span12" tabindex="1"  name="enter_leixing" data-placeholder="Select here.." >
+                           <option value="{$enter_leixing}">{$enter_leixing}</option>
+                           <option value="非煤矿">非煤矿</option>
+                           <option value="烟花爆竹经营">烟花爆竹经营</option>
+                           <option value="烟花爆竹生产">烟花爆竹生产</option>
+                           <option value="危险化学生产">危险化学生产</option>
+                           <option value="危险化学经营">危险化学经营</option>
+                           <option value="其它高危">其它高危</option>
+                        </select>
+                     </td>
+                   </tr>
+                   <tr>
+                      <td>原企业在册人数</td>
+                      <td ><input class="span12 error"  type="text" disabled="原企业在册人数"  value="{$enter_pr}"></td>
+                      <td>原企业管理人数</td>
+                      <td ><input class="span12 error"  type="text" disabled="原企业管理人数"  value="{$enter_pr_manager}"></td>
+                      <td>原企业一般员工</td>
+                      <td ><input class="span12 error"  type="text" disabled="原企业一般员工"  value="{$enter_pr_grade}"></td>
+                      <td>原高危岗员工</td>
+                      <td ><input class="span12 error"  type="text" disabled="原高危岗员工"  value="{$enter_pr_high}"></td>
+                    </tr>
+                    <tr>
+                      <td>企业在册人数</td>
+                      <td ><input class="span12"  type="text" name="enter_pr"  value="{$enter_pr}"></td>
+                      <td>企业管理人数</td>
+                      <td ><input class="span12"  type="text" name="enter_pr_manager"  value="{$enter_pr_manager}"></td>
+                      <td>企业一般员工</td>
+                      <td ><input class="span12"  type="text" name="enter_pr_grade"   value="{$enter_pr_grade}"></td>
+                      <td>企业高位岗员工</td>
+                      <td ><input class="span12"  type="text" name="enter_pr_high"  value="{$enter_pr_high}"></td>
+                    </tr>
+                  </table>
+                   
+                
+            <div class="widget-footer">
+               <button class="btn btn-primary" type="submit">提交</button>
+               <button class="btn" type="button">取消</button>
+            </div>
+ 
+
+      <!-- /Main window -->
+      
+    <!--/.fluid-container-->
+    <!-- wrap ends-->
+    <!--联动菜单脚本开始-->
+    </form> 
+        </div>
+       </div>
+      </div>
+     </div>  
+    </div>
+   </div>
+  </div>
+     </div><!--/.fluid-container-->
+    </div><!-- wrap ends-->
+	<script>
+	function move()
+	{
+	var s1=document.getElementById("s1"); var s2=document.getElementById("s2"); <!-- 获取一级和二级的属性-->
+	var add;
+	if(s1.value=="昆明")
+	{
+	add=new Array("五华","盘龙","官渡","西山","东川","呈贡","晋宁","富民","宜良","石林","嵩明","禄劝","寻甸","安宁"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="曲靖")
+	{
+	add=new Array("麒麟","沾益","马龙","陆良","师宗","罗平","富源","会泽","宣威");<!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="玉溪")
+	{
+	add=new Array("红塔","江川","澄江","通海","华宁","易门","峨山","新平","元江"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="保山")
+	{
+	add=new Array("隆阳","施甸","龙陵","昌宁","腾冲");
+	}else if(s1.value=="昭通")
+	{
+	add=new Array("昭阳","鲁甸","巧家","盐津","大关","永善","绥江","镇雄","彝良","威信","水富"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="丽江")
+	{
+	add=new Array("古城","玉龙","永胜","华坪","宁蒗"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="普洱")
+	{
+	add=new Array("思茅","宁洱","墨江","景东","景谷","镇沅","江城","孟连","澜沧","西盟"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="临沧")
+	{
+	add=new Array("临翔","凤庆","云","永德","镇康","双江","耿马","沧源"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="楚雄")
+	{
+	add=new Array("楚雄","双柏","牟定","南华","姚安","大姚","永仁","元谋","武定","禄丰"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="红河")
+	{
+	add=new Array("个旧","开远","蒙自","弥勒","屏边","建水","石屏","泸西","元阳","红河","金平","绿春","河口"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="文山")
+	{
+	add=new Array("文山","砚山","西畴","麻栗坡","马关","丘北","广南","富宁"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="版纳")
+	{
+	add=new Array("景洪","勐海","勐腊"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="大理")
+	{
+	add=new Array("大理","漾濞","祥云","宾川","弥渡","南涧","巍山","永平","云龙","洱源","剑川","鹤庆"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="德宏")
+	{
+	add=new Array("瑞丽","芒","梁河","盈江","陇川"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="怒江")
+	{
+	add=new Array("泸水","福贡","贡山","兰坪"); <!--比对value值，实现对应二级text值的动态生成-->
+	}else if(s1.value=="迪庆")
+	{
+	add=new Array("香格里拉","德钦","维西"); <!--比对value值，实现对应二级text值的动态生成-->
+	}
+	else
+	{
+	add=null; <!--若没有就为空，当然不可能出现的-->
+	}
+	s2.length=0;
+	for(var i=0;i<add.length;i++) { var ss=new Option(); ss.text=add[i].split()[0];
+	s2.add(ss);
+	<!--把text值添加到二级select中，显示出来-->
+	}
+	}
+</script>
+	<!--联动菜单结束-->
+
+
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/raphael-min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/sparkline.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/morris.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.dataTables.min.js"></script>   
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.masonry.min.js"></script>   
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.imagesloaded.min.js"></script>   
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.facybox.js"></script>   
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.alertify.min.js"></script> 
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.knob.js"></script>
+    <script type='text/javascript' src="__PUBLIC__/static/assets/js/fullcalendar.min.js"></script>
+    <script type='text/javascript' src="__PUBLIC__/static/assets/js/jquery.gritter.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/realm.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/assets/js/realm.js"></script>
+    <!--<script type="text/javascript" src="__PUBLIC__/static/assets/js/jquery.slimscroll.min.js"></script>-->
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Focus Admin: Creative Admin Dashboard</title>
+        <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+        <!-- Standard iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+        <!-- Standard iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+        <!-- Styles -->
+    <link rel="shortcut icon" href="__PUBLIC__/static/assets/ico/favicon.html">
+    <link href="__PUBLIC__/static/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/theme.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/alertify.css" rel="stylesheet">
+    <link href="http://fonts.useso.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="Favicon Icon" href="__PUBLIC__/static/favicon.ico">
+    <style type="text/css">
+    body,td,th {
+	/* [disabled]font-family: "Open Sans", sans-serif; */
+	font-size: 12px;
+}
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script></script>
+    <![endif]-->
+    <link href="__PUBLIC__/static/assets/css/colorpicker.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/datepicker.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/timepicker.css" rel="stylesheet">
+    <link href="__PUBLIC__/static/assets/css/select2.css" rel="stylesheet">
+  </head>
+  
+ 
+
+<body>
+'这是index/view/enter下的index.html输出的'
+<form class="layui-form layui-form-pane" action="index/index/instr" method="post">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend>管理账号设置</legend>
+        </fieldset>
+  <div class="layui-form-item">
+            <label class="layui-form-label">管理员账号</label>
+            <div class="layui-input-inline w200">
+                <input type="text" class="layui-input" name="account" lay-verify="title">
+            </div>
+            <div class="layui-form-mid layui-word-aux">管理员账号最少4位</div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">管理员密码</label>
+            <div class="layui-input-inline w200">
+                <input type="password" class="layui-input" name="password" lay-verify="title">
+            </div>
+            <div class="layui-form-mid layui-word-aux">保证密码最少6位</div>
+        </div>
+        <div class="step-btns">
+            <a href="?step=2" class="layui-btn layui-btn-primary layui-btn-big fl">返回上一步</a>
+            <button type="submit" class="layui-btn layui-btn-big layui-btn-normal fr" lay-submit="" lay-filter="formSubmit">立即执行安装</button>
+        </div>
+</form>
+</body>
+</html>
